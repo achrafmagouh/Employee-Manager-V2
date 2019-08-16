@@ -23,18 +23,6 @@ var employeeManagerCommands = {
         }
         return this
     },
-    editTest: function (oldEmployee, newEmployee, otherEmployee){
-        this.clickEmployee(oldEmployee)
-            .editEmployee(newEmployee)
-            .click('@saveButton')
-            .clickEmployee(otherEmployee)
-            .expect.element('@cardTitle').text.to.equal(otherEmployee).before(500)
-        this.clickEmployee(newEmployee.name)
-            .expect.element('@cardTitle').text.to.equal(newEmployee.name).before(500)
-        this.expect.element('@nameField').value.to.equal(newEmployee.name)
-        this.expect.element('@phoneField').value.to.equal(newEmployee.phone)
-        this.expect.element('@titleField').value.to.equal(newEmployee.title)
-        
 
 
 
