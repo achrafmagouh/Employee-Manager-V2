@@ -39,9 +39,6 @@ module.exports = {
     'It can edit a new employee Q4A-72': browser => {
         employeeManagerPage
             .click('@addButton')
-
-
-
             .clickEmployee('New Employee')
             .editEmployee({ name: 'Hank Hill', phone: '0000000000' })
             .click('@saveButton')
