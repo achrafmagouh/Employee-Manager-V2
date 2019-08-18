@@ -60,5 +60,5 @@ module.exports = {
         employeeManagerPage
             .clickEmployee('Dollie Berry')
             .expect.element('@titleField').value.to.equal('Master and Commander')
-    }
+    },
 }
