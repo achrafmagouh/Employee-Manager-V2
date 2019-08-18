@@ -22,7 +22,7 @@ var employeeManagerCommands = {
                 .setValue('@titleField', employeeInfo.title)
         }
         return this
-    },
+    }
 
 
 
