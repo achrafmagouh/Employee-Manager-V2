@@ -1,11 +1,4 @@
-/**
- * Edits an employee and checks that the edit stuck.
- * 
- * @param {object} pageObject the page object currently being used for employee manager
- * @param {string} oldEmployee the name of the employee to be edited
- * @param {object} newEmployee {name: '', phone: '', title: ''} - the values desired post-edit
- * @param {string} otherEmployee the name of another employee not involved in the edit
- */
+
 module.exports = (pageObject, oldEmployee, newEmployee, otherEmployee) => {
     pageObject
         .clickEmployee(oldEmployee)
