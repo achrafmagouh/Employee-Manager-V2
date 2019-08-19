@@ -1,5 +1,5 @@
 
-module.exports = (pageObject, oldEmployee, newEmployee, otherEmployee) => {
+module.exports = [(pageObject, oldEmployee, newEmployee, otherEmployee) => {
     pageObject
         .clickEmployee(oldEmployee)
         .editEmployee(newEmployee)
@@ -13,3 +13,4 @@ module.exports = (pageObject, oldEmployee, newEmployee, otherEmployee) => {
     pageObject.expect.element('@phoneField').value.to.equal(newEmployee.phone)
     pageObject.expect.element('@titleField').value.to.equal(newEmployee.title)
 }
+]
