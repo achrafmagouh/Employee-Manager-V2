@@ -32,7 +32,7 @@ var employeeManagerCommands = {
 
 
 module.exports = {
-    url: 'https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html',
+    url: "https://devmountain-qa.github.io/employee-manager-v2/build/index.html",
     commands: [employeeManagerCommands],
     elements: {
         versionNumber: 'footer',
