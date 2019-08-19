@@ -34,10 +34,7 @@ module.exports = {
     elements: {
         versionNumber: 'footer',
         addButton: 'li[name="addEmployee"]',
-        newEmployee: {
-            selector: '//li[text()="New Employee"]',
-            locateStrategy: 'xpath'
-        },
+        newEmployee: { selector: '//li[text()="New Employee"]', locateStrategy: 'xpath},
         cardTitle: '#employeeTitle',
         nameField: 'input[name="nameEntry"]',
         phoneField: 'input[name="phoneEntry"]',
