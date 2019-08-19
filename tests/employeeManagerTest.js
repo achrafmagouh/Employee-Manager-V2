@@ -1,5 +1,5 @@
 
-let employeeManagerPage = {}
+var employeeManagerPage = {}
 
 module.exports = (pageObject, oldEmployee, newEmployee, otherEmployee) => {
     pageObject
