@@ -7,19 +7,16 @@ var employeeManagerCommands = {
     }, 
     editEmployee: function(employeeInfo){
         if(employeeInfo.name){
-            this
-                .clearValue('@nameField')
-                .setValue('@nameField', employeeInfo.name)
+            this.clearValue('@nameField')
+            this.setValue('@nameField', employeeInfo.name)
         }
         if(employeeInfo.phone){
-            this
-                .clearValue('@phoneField')
-                .setValue('@phoneField', employeeInfo.phone)
+        this.clearValue('@phoneField')
+        this.setValue('@phoneField', employeeInfo.phone)
         }
         if(employeeInfo.title){
-            this
-                .clearValue('@titleField')
-                .setValue('@titleField', employeeInfo.title)
+        this.clearValue('@titleField')
+        this.setValue('@titleField', employeeInfo.title)
         }
         return this
     }
